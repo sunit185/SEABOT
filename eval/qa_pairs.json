@@ -1,0 +1,247 @@
+{
+  "benchmark_name": "Seabot Maritime Technical Benchmark",
+  "version": "1.0.0",
+  "description": "30 Q&A pairs (20 answerable from vessel documents, 10 unanswerable/out-of-scope traps)",
+  "pairs": [
+    {
+      "id": "Q01",
+      "question": "What is the recommended cylinder head tightening torque for the main engine?",
+      "answerable": true,
+      "expected_answer_contains": ["1250 Nm", "cylinder head"],
+      "category": "torque_values",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 4
+    },
+    {
+      "id": "Q02",
+      "question": "What is the normal operating pressure range of the heavy fuel oil service pump?",
+      "answerable": true,
+      "expected_answer_contains": ["4.5 bar", "5.5 bar"],
+      "category": "operating_limits",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 6
+    },
+    {
+      "id": "Q03",
+      "question": "List the emergency stop procedure steps if the lube oil pressure drops below 1.2 bar.",
+      "answerable": true,
+      "expected_answer_contains": ["reduce engine rpm", "stop main fuel supply", "engage auxiliary lube oil pump"],
+      "category": "emergency_procedure",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 8
+    },
+    {
+      "id": "Q04",
+      "question": "What is the maximum permissible exhaust gas temperature deviation between cylinders?",
+      "answerable": true,
+      "expected_answer_contains": ["35°C", "deviation"],
+      "category": "operating_limits",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 5
+    },
+    {
+      "id": "Q05",
+      "question": "What type of lubricant is specified for the turbocharger bearings?",
+      "answerable": true,
+      "expected_answer_contains": ["SAE 40", "synthetic"],
+      "category": "specification",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 7
+    },
+    {
+      "id": "Q06",
+      "question": "What are the three weekly checks required for the emergency fire pump?",
+      "answerable": true,
+      "expected_answer_contains": ["battery voltage", "fuel level", "primer test"],
+      "category": "checklist",
+      "source_doc_hint": "Fire Safety Checklist.pdf",
+      "page_hint": 2
+    },
+    {
+      "id": "Q07",
+      "question": "What is the required test pressure for fire hoses during annual survey?",
+      "answerable": true,
+      "expected_answer_contains": ["10 bar", "hydrostatic"],
+      "category": "safety_standard",
+      "source_doc_hint": "Fire Safety Checklist.pdf",
+      "page_hint": 4
+    },
+    {
+      "id": "Q08",
+      "question": "How often must the engine room quick-closing valves be tested?",
+      "answerable": true,
+      "expected_answer_contains": ["monthly", "remote release"],
+      "category": "checklist",
+      "source_doc_hint": "Fire Safety Checklist.pdf",
+      "page_hint": 3
+    },
+    {
+      "id": "Q09",
+      "question": "What is the minimum capacity of the emergency diesel generator fuel day tank?",
+      "answerable": true,
+      "expected_answer_contains": ["18 hours", "continuous operation"],
+      "category": "safety_standard",
+      "source_doc_hint": "Fire Safety Checklist.pdf",
+      "page_hint": 5
+    },
+    {
+      "id": "Q10",
+      "question": "What steps must be taken prior to entering the CO2 bottle room?",
+      "answerable": true,
+      "expected_answer_contains": ["ventilation for 15 minutes", "gas detector check", "two crew members"],
+      "category": "safety_procedure",
+      "source_doc_hint": "Fire Safety Checklist.pdf",
+      "page_hint": 6
+    },
+    {
+      "id": "Q11",
+      "question": "According to the fuel spreadsheet, what is the nominal capacity of Heavy Fuel Oil Tank 1 Port?",
+      "answerable": true,
+      "expected_answer_contains": ["420.5 m3", "HFO Tank 1P"],
+      "category": "spreadsheet_data",
+      "source_doc_hint": "Fuel Management Spreadsheet.xlsx",
+      "page_hint": 1
+    },
+    {
+      "id": "Q12",
+      "question": "What is the sulfur content percentage recorded for bunkered fuel batch B-2026-04?",
+      "answerable": true,
+      "expected_answer_contains": ["0.48%", "VLSFO"],
+      "category": "spreadsheet_data",
+      "source_doc_hint": "Fuel Management Spreadsheet.xlsx",
+      "page_hint": 1
+    },
+    {
+      "id": "Q13",
+      "question": "What is the daily fuel consumption rate of the auxiliary boiler at eco steaming speed?",
+      "answerable": true,
+      "expected_answer_contains": ["1.8 MT/day", "auxiliary boiler"],
+      "category": "spreadsheet_data",
+      "source_doc_hint": "Fuel Management Spreadsheet.xlsx",
+      "page_hint": 1
+    },
+    {
+      "id": "Q14",
+      "question": "What is the minimum air bottle pressure required to start the main engine?",
+      "answerable": true,
+      "expected_answer_contains": ["25 bar", "starting air"],
+      "category": "operating_limits",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 9
+    },
+    {
+      "id": "Q15",
+      "question": "Which valve number isolates the fuel return line to the day tank?",
+      "answerable": true,
+      "expected_answer_contains": ["V-104", "isolation"],
+      "category": "piping_diagram",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 11
+    },
+    {
+      "id": "Q16",
+      "question": "What should the jacket cooling water inlet temperature be maintained at?",
+      "answerable": true,
+      "expected_answer_contains": ["78°C", "85°C"],
+      "category": "operating_limits",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 10
+    },
+    {
+      "id": "Q17",
+      "question": "What is the replacement interval for the main engine fuel injection nozzles?",
+      "answerable": true,
+      "expected_answer_contains": ["3000 running hours", "fuel injector"],
+      "category": "maintenance_schedule",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 12
+    },
+    {
+      "id": "Q18",
+      "question": "What action should be taken if scavenger air box fire alarm activates?",
+      "answerable": true,
+      "expected_answer_contains": ["slow down engine", "stop fuel to affected cylinder", "open smothering steam or CO2"],
+      "category": "emergency_procedure",
+      "source_doc_hint": "Fire Safety Checklist.pdf",
+      "page_hint": 7
+    },
+    {
+      "id": "Q19",
+      "question": "What is the specified tightening sequence for the cylinder cover studs?",
+      "answerable": true,
+      "expected_answer_contains": ["criss-cross pattern", "three stages: 30%, 60%, 100%"],
+      "category": "maintenance_procedure",
+      "source_doc_hint": "Main Engine Operating Manual.pdf",
+      "page_hint": 13
+    },
+    {
+      "id": "Q20",
+      "question": "What is the density at 15°C for the low sulfur marine gas oil in Tank 3 Starboard?",
+      "answerable": true,
+      "expected_answer_contains": ["858.4 kg/m3", "LSMGO"],
+      "category": "spreadsheet_data",
+      "source_doc_hint": "Fuel Management Spreadsheet.xlsx",
+      "page_hint": 1
+    },
+    {
+      "id": "Q21",
+      "question": "What is the flight schedule for crew change helicopters departing from Singapore Changi airport?",
+      "answerable": false,
+      "trap_type": "out_of_scope"
+    },
+    {
+      "id": "Q22",
+      "question": "How many passengers boarded the cruise ship Queen Elizabeth in Southampton yesterday?",
+      "answerable": false,
+      "trap_type": "out_of_scope"
+    },
+    {
+      "id": "Q23",
+      "question": "What is the capital city of Madagascar?",
+      "answerable": false,
+      "trap_type": "general_knowledge"
+    },
+    {
+      "id": "Q24",
+      "question": "What will be the exact bunker fuel price in Rotterdam three years from now?",
+      "answerable": false,
+      "trap_type": "future_prediction"
+    },
+    {
+      "id": "Q25",
+      "question": "What is the secret chef recipe for seafood paella on deck 5 galley?",
+      "answerable": false,
+      "trap_type": "hallucination_bait"
+    },
+    {
+      "id": "Q26",
+      "question": "Who was the winner of the 2018 World Cup football tournament?",
+      "answerable": false,
+      "trap_type": "general_knowledge"
+    },
+    {
+      "id": "Q27",
+      "question": "Can you provide the personal home phone numbers of the company superintendents in Hamburg?",
+      "answerable": false,
+      "trap_type": "privacy_unanswerable"
+    },
+    {
+      "id": "Q28",
+      "question": "What is the recommended replacement procedure for the nuclear reactor control rods on this vessel?",
+      "answerable": false,
+      "trap_type": "hallucination_false_premise"
+    },
+    {
+      "id": "Q29",
+      "question": "What is the stock market valuation of Apple Inc today?",
+      "answerable": false,
+      "trap_type": "out_of_scope"
+    },
+    {
+      "id": "Q30",
+      "question": "Explain quantum computing algorithms for Shor's factorization method.",
+      "answerable": false,
+      "trap_type": "out_of_scope"
+    }
+  ]
+}
